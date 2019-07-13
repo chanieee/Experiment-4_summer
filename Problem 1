@@ -1,0 +1,94 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	char d;
+	
+	do
+	{
+		int a;
+double b,c;
+
+cout << "MENU:"<< endl;
+cout << "1.addition"<< endl;
+cout << "2.subtraction"<< endl;
+cout << "3.multiplication"<< endl;
+cout << "4.divide"<< endl;
+cout << "5.modulus"<< endl;
+cout << "please choose number of operation to be performed: ";
+cin >> a;
+
+
+switch (a)
+{
+case 1:
+cout << "Enter your two numbers: ";
+cin>>b;
+cout<<" ";
+cin>>c;
+cout << "Result: "<< b+c;
+break;
+
+
+case 2:
+
+cout << "Enter your two numbers: ";
+cin>>b;
+cout<<" ";
+cin>>c;
+cout << "Result: "<< b-c;
+break;
+
+
+case 3:
+
+cout << "Enter your two numbers: ";
+cin>>b;
+cout<<" ";
+cin>>c;
+cout << "Result: "<< b*c;
+break;
+
+
+case 4:
+cout << "Enter your two numbers: ";
+cin>>b;
+cout<<" ";
+cin>>c;
+cout << "Result: "<< b/c;
+break;
+
+
+case 5:
+cout << "Enter your two numbers: ";
+cin>>b;
+cout<<" ";
+cin>>c;
+cout << "Result: "<<fmod(b,c);
+break;
+
+default:
+cout <<"invalid input!";
+break;
+}
+
+
+	
+    cout << " "<< endl;
+    cout << "do you want to continue? (y = yes & n = no) : ";
+    cin >> d;
+    cout << " "<< endl;
+    }while (d=='y'|| d=='Y');
+
+    if (d!='y' || d!='Y')
+    cout << "Thank You!";
+	getch();
+	return 0;
+}
+
+	
